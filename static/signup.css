@@ -1,0 +1,27 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/* Ignore => Base Styles */
+body { background:#ffffff -webkit-font-smoothing: antialiased; }
+
+
+.parallax-window {
+    min-height: 300px;
+    background: transparent;
+}
+
+h2, h1, h4, h3 {
+    font-family: 'Slabo 27px', serif;
+    color: black;
+}
+
+p{font-family: 'Slabo 13px', serif;}
+
+.navbar{
+font-family: 'Slabo 27px', serif;
+    color: black;
+}
+
