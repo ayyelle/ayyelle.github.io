@@ -2,493 +2,66 @@
 <html lang="en">
  
 <head>
-    <title>Anna Leong, Aspiring Software Developer</title>
+    <title>Anna Leong, Software Developer</title>
  
  
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Slabo+13px' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
- 
- <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="http:/cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-     <link href="static/signup.css" rel="stylesheet">
-     <script src = "static/testerJs.js"></script>
-     <script src = "static/parallax.min.js"></script>
-     <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="additonaljavascript.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     
- 
- 
-</head>
- 
-<body>
+ </head>
+ <body>
 
-  <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#about">Anna Leong</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-
-
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
- 
-
- 
-
-        <div class="page-header" id = "about">
-          <br><br>
-  <center><h1>Anna Leong <small>UBC Computer Science Student</small></h1></center>
+ 	<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+  	<div class="container">
+  <div class="row">
+    <div class="col">    <h1 class="display-4">Anna Leong</h1>
+    <p class="lead">Software Developer in Vancouver, Canada</p></div>
+    <div class="col"><img src="static/workspace.jpg" class="rounded" alt="workspace" style="max-width:50%;"" ></div>
+  </div>
 </div>
-
+  </div>
+</div>
+ 
 
 <section>
-         <div class="container">
-       
+	         <div class="container">
+	         	<p>
+	         	<button type="button" class="btn btn-outline-success" onclick="showSummary()">Summary</button>
+	         	<button type="button" class="btn btn-outline-primary" onclick="showMoreInfo()">More Information</button>
+<button type="button" class="btn btn-outline-warning" onclick="showOtherExperiences()">Other Experiences</button></p>
 
-        <p>Hi! I am a UBC Student in the Bachelor of Computer Science program, a second-degree program.  I have a Bachelor of Science in Biology from UBC. </p>
+
+	<div id="short_intro" class="panel panel-success"><p>Hi! I am a Software Developer based in Vancouver, Canada. I graduated from the University of British Columbia with degrees in Computer Science and Biology. Outside of programming, I spend my spare time tap dancing, running, bouldering and watching musicals.</p></div>
+
+       
+   <div id="long_intro" style="display:none">
+
+        <p>I graduated from the University of British Columbia with a Bachelor of Computer Science degree, from the BCS/ICS programing, a second-degree program. My first degree is in Biology where I focused on my studies on botany and genetics </p>
+        <p>I have about 3 years of industry experience and primarily work as a web application developer with a focus on backend technologies. I do enjoy dabbling with web design on my own time though with HTML, CSS, and JavaScript</p>
+        <p>On top of being a Software Developer, I am also a Certifed Scrum Master for my team. I coordinate with our Product Owner and VP of Product Innovation to support my team, facilitate discussions surrounding our Scrum process and help with unblocking any issues.</p>
         <p>I have always had an interest in computing, which stems from my learning HTML at the age of 12 in order to jazz up my Neopets userlookup. This lead to my love for my high school computing classes and interest in providing technological support to the various organizations I was a part of.</p>
  
-<p>I am interested in combining my previously attained knowledge in the life sciences and work experience in Communications with the technological skills I am currently gaining. I am also very excited to explore all the various aspects of technology and see how they can support other components of our society.  </p>
+</div>
+
+   <div id="other_experiences" style="display:none">
+
+        <p>Prior to studying computer science and working in techology, I've worked as a communication assistant where I was responsible for the UI/UX of the website, drafting weekly emails, creating PowerPoint slides and writing blog posts.</p>
+        <p>I volunteer with Canada Learning Code regulary where I am a mentor and help teach young students the basics of programming in languages such as Python and Processing.</p>
  
-<p>Aside from fiddling around with different technologies, I enjoy reading, blogging and exploring the lovely forests of the Pacific Northwest.</p>
-
-       </div>
-
-   
-
-    <div  id = "skills"class="parallax-window" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="static/keyboard.jpg" data-natural-width="1920" data-natural-height="1280"><center><h2><br><br><br><font color = "white">Skills</font></h2></center></div>
-
-    <section>
-      
-      <div class = "container">
-
-        <h3>Languages</h3>
-          <p> Java</p>
-          <div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-    <span class="sr-only">70% Complete</span>
-  </div>
-</div>
-<p> Python</p>
-<div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-    <span class="sr-only">70% Complete</span>
-  </div>
-</div>
-<p> JavaScript</p>
-<div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-    <span class="sr-only">75% Complete</span>
-  </div>
-</div>
-<p> R</p>
-<div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-    <span class="sr-only">30% Complete</span>
-  </div>
-</div>
-<p> C</p>
-<div class="progress">
-  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-    <span class="sr-only">30% Complete</span>
-  </div>
 </div>
 
-            <h3>Technologies</h3>
-           <p>Eclipse IDE, Spring Tool Suites, Spring Boot, Flask, Git, Gradle, Grunt, Sass, Selenium Web Driver, JMeter, Axure, Android Studio, GWT Web Framework </p>
-
-            <h3>Other</h3>
-           <p>Spring MVC, HTML, CSS, Bootstrap, jQuery, Paintshop Pro </p>
-
-  
-     </div>
-    </section>
-
-    <div id = "experience"class="parallax-window" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="static/flower.jpg" data-natural-width="1920" data-natural-height="1126"><center><h2><br><br><br><font color = "white">Experience</font></h2></center></div>
-
-    <section>
-      <div class="container">
-         <h3>Software Developer  </h3>                                                                               
-         <p>Atlas Labs, Sydney NSW, Australia <br>
-        July 2016-September 2016</p>
-        <h3>Junior Web Application Developer  </h3>                                                                               
-         <p>INETCO Systems Ltd, Burnaby BC <br>
-        September 2015-April 2016</p>
- 
-<h3>Communications Assistant </h3>                                                                                        
-<p>Student Development, Dean's Office - Faculty of Science
-<br>University of British Columbia, Vancouver BC<br>
-September 2013-April 2015</p>
- 
-<h3>Web Communications Assistant  </h3>                                                                                      
-<p>Dean's Office - Faculty of Science<br>
-University of British Columbia, Vancouver BC<br>
-May 2014-August 2014</p>
-       
-      </div>
-    </section>
-
-    <div id = "projects"class="parallax-window" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="static/forest.jpg" data-natural-width="1920" data-natural-height="1279"><center><h2><br><br><br><font color = "white">Projects</font></h2></center></div>
-
-    <section>
-      <br>
-      <div class="container">
-        <div class="row">
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/ssdsite.PNG" target="_blank"><img src="static/ssdsite400.png" alt="Science Student Development Website" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>Science Student Development Website</h3>
-      
-<p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#ssdModal">
-  Details
-</button><p>
-   <!--      <p><a href="#ssdModal" class="btn btn-default" role="button" target = "_blank">Active Link</a></p> -->
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/meetup.png" target="_blank"><img src="static/meetup400.png" alt="Meet-Up Android App" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>Meet-Up Android Application (Class Project)</h3>
-        <p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#meetupModal">
-  Details
-</button><p>
-       
-      </div>
-    </div>
-  </div>
-  
-</div>
-
-<div class="row">
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/weatherwear.jpg" target="_blank"><img src="static/weatherwear400.png" alt="WeatherWear Android App" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>WeatherWear Android App (Hackathon Project)</h3>
-      
-<p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#weatherwearModal">
-  Details
-</button><p>
-   <!--      <p><a href="#ssdModal" class="btn btn-default" role="button" target = "_blank">Active Link</a></p> -->
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/culturecrawl.png" target="_blank"><img src="static/culturecrawl400.png" alt="Vancouver Culture Crawl" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>Vancouver Culture Crawl Web App (Class Project)</h3>
-        <p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#vccModal">
-  Details
-</button><p>
-       
-      </div>
-    </div>
-  </div>
-  
-</div>
-
-<div class="row">
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/hungry.png" target="_blank"><img src="static/hungry400.png" alt="Hungry At The Bus Stop Web App" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>Hungry At The Bus Stop (Hackathon Project)</h3>
-      
-<p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#hungryModal">
-  Details
-</button><p>
-   <!--      <p><a href="#ssdModal" class="btn btn-default" role="button" target = "_blank">Active Link</a></p> -->
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/personalWebsite.PNG" target="_blank"><img src="static/personalWebsite400.png" alt="Personal Website" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>Personal Website <br>(You're looking at it!)</h3>
-        <p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#websiteModal">
-  Details
-</button><p>
-       
-      </div>
-    </div>
-  </div>
-
-
-  
-</div>
-
-
-<div class="row">
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/fishackathon.PNG" target="_blank"><img src="static/fishackathon400.png" alt="Ghost Gear Easy Report" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>Fishackathon (Hackathon Project)</h3>
-      
-<p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#fishackathonModal">
-  Details
-</button><p>
-   <!--      <p><a href="#ssdModal" class="btn btn-default" role="button" target = "_blank">Active Link</a></p> -->
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-6">
-    <div class="thumbnail">
-      <a href="static/orderup.PNG" target="_blank"><img src="static/orderup.PNG" alt="Order Up!" width = "100%", height = "100%"> </a>
-      <div class="caption">
-        <h3>Order Up! <br> (Class Project)</h3>
-        <p><button type="button" class="btn btn-default" data-toggle="modal" data-target="#orderupModal">
-  Details
-</button><p>
-       
-      </div>
-    </div>
-  </div>
-  
-</div>
-
-  
-     
-      </div>
-    </section>
-
-    <div id = "contact"class="parallax-window" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="static/forestmorning.jpg" data-natural-width="2722" data-natural-height="1815"><center><h2><br><br><br><font color = "white">Contact</font></h2></center></div>
-
-    <section>
-      <div class="container">
-        <br>
-<center>
-        <a href="http://twitter.com/ayyelle" target = "_blank">
-  <img src="static/twitter.png" alt="Twitter">
-</a>
-
-<a href="http://github.com/ayyelle" target = "_blank">
-  <img src="static/github.png" alt="GitHub">
-</a>
-
-<a href="https://www.linkedin.com/in/annaleong" target = "_blank">
-  <img src="static/linkedin.png" alt="Linkedin">
-</a>
-</center>
-      
-      </div>
-    </section>
-
-    <div class="modal fade" id="ssdModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Science Student Development Website (now discontinued)</h4>
-      </div>
-      <div class="modal-body">
-       <p>This website is for the Science Student Development department at the University of British Columbia. It features resources for student support, such as notices for events for academic and professional development, blog posts on advice for academic success, and links to the weekly newsletter. <br><br>
- 
-I was the main front end developer for this responsive website in my role as the Communications Assistant for Science Student Development.<br><br>
- 
-<strong>Technologies Used: HTML, CSS, Bootstrap, Wordpress, Photoshop, Paintshop Pro</strong> </p>
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-   <div class="modal fade" id="meetupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Meet-Up Android App</h4>
-      </div>
-      <div class="modal-body">
-     <p>This Android Application allows students at UBC the ability to find other students to meet up with in between mutual breaks in their schedules. This app displays the students' schedules on a map of UBC and shows the route between their classes while highlighting dining locations on campus that they can meet up at. <br><br>
- 
-This application was developed as part of my Software Construction class at UBC (CPSC 210). We were given the UI and some supporting methods but I implemented the client side.<br><br>
- 
-<strong>Technologies Used: Java, Android Studio, MapQuest API, FourSquare API</strong></p>
-      </div>
-      <div class="modal-footer">
-        <a href="https://gist.github.com/ayyelle/da21b44a583b80dacede" class="btn btn-primary" role="button" target = "_blank">Gist Files</a>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
- <div class="modal fade" id="vccModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Vancouver Culture Crawl Web App</h4>
-      </div>
-      <div class="modal-body">
-       <p>A web application that helps you locate and explore various cultural spaces in the city of Vancouver. <br><br>
- 
-This web application was developed as a project for my Introduction to Software Engineering class (CPSC 310). My major contributions include: Front-end development, implementation of server-side code to retrieve data from a remote server and refactoring.<br><br>
- 
-<strong>Technologies Used: Java, GWT Web Framework, HTML, CSS, Photoshop, Google Maps API, Vancouver Open Data</strong></p>
-      </div>
-      <div class="modal-footer">
-        <a href="http://vancouver-culture-crawl.appspot.com" class="btn btn-primary" role="button" target = "_blank">Active Link</a>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-   <div class="modal fade" id="weatherwearModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">WeatherWear Android App</h4>
-      </div>
-      <div class="modal-body">
-     <p>This app allows the user to look up the current weather conditions of their location of choosing and suggests weather-appropriate clothing. <br><br>
- 
-This app was developed with a partner as part of the UBC Bachelor of Computer Science 2015 Hackathon. We essentially accomplished this through pair programming by coding on one laptop and using the other to research and look for examples on the web for some functionalities we wanted. <br><br>
- 
-<strong>Technologies Used: Java, Android Studio, OpenWeather API</strong></p>
-      </div>
-      <div class="modal-footer">
-        <a href="https://gist.github.com/ayyelle/e323912075789351cbc5" class="btn btn-primary" role="button" target = "_blank">Gist Files</a>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
- <div class="modal fade" id="hungryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Hungry At The Bus Stop (Web App)</h4>
-      </div>
-      <div class="modal-body">
-       <p>This app helps the user find restaurants near the bus stop they are currently at; it's for the times when you've just missed your bus and instead of waiting in the cold for half an hour, you can go fill your stomach! <br><br>
- 
-This app was developed with a group of 4 as part of the UBC Bachelor of Computer Science Fall 2015 Hackathon. <br><br>
- 
-<strong>Technologies Used: JavaScript, Node.js, Express.js, Bootstrap, Translink BC API, Zomato API</strong></p>
-      </div>
-      <div class="modal-footer">
-        <a href="https://github.com/lcoombe/Hackathon-App" class="btn btn-primary" role="button" target = "_blank">GitHub Files</a>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-   <div class="modal fade" id="websiteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Personal Website</h4>
-      </div>
-      <div class="modal-body">
-     <p>My personal website is built from scratch (I started with a blank .html file)!  <br><br>
- 
-<strong>Technologies Used: JavaScript, HTML, CSS, Bootstrap, jQuery</strong></p>
-      </div>
-      <div class="modal-footer">
-       
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="fishackathonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Third Place - Fishackathon 2016 Vancouver Web App</h4>
-      </div>
-      <div class="modal-body">
-     <p>A web app for reporting ghost gear discovered in the waters off the coast to allow for eventual retrieval. This web application allows a user to fill out a form to report gear found and to look up gear that has been found. My major contributions include working on the connection between the front and back ends of the application while assisting on both ends when needed, and on the photo uploading feature.
- <br><br>
- 
-<strong>Technologies Used: Python, Flask, Firebase, JavaScript, Bootstrap</strong></p>
-      </div>
-      <div class="modal-footer">
-       <a href="https://arcane-temple-97056.herokuapp.com/" class="btn btn-primary" role="button" target = "_blank">Active Link</a>
-       <a href="https://github.com/linruth/FishHackathon" class="btn btn-primary" role="button" target = "_blank">GitHub Repo</a>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="orderupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Order Up! Desktop Application </h4>
-      </div>
-      <div class="modal-body">
-     <p>This restaurant reservation application was developed as part of our introductory databases class. I contributed to the back-end development of the Customer's functions and assisted with the GUI. 
- <br><br>
- 
-<strong>Technologies Used: Java, Swing, SQL*Plus</strong></p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
+<a class="btn btn-info btn-sm" href="https://github.com/ayyelle" target="_blank">GitHub</a>
+<a class="btn btn-info btn-sm" href="https://twitter.com/ayyelle" target="_blank">Twitter</a>
+<a class="btn btn-info btn-sm" href="https://www.linkedin.com/in/annaleong/" target="_blank">LinkedIn</a>
 
 </body>
 
