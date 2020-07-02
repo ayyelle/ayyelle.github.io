@@ -51,4 +51,5 @@ function showSummary() {
   y.style.display = "none"
   var z = document.getElementById("other_experiences");
   z.style.display = "none"
+
 }
